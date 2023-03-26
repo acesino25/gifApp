@@ -1,8 +1,8 @@
 // Necesitamos la librería que crea la cascada de direcciones
 import { createBrowserRouter } from "react-router-dom";
-import App from "../App";
 import Home from "../pages/Home";
 import Layout from "../pages/layout/Layout";
+import ResultsPage from "../pages/ResultsPage";
 
 
 
@@ -26,6 +26,12 @@ export const router = createBrowserRouter([
             {
                 index: true,
                 element: <Home></Home>
+            },
+            {
+                // Especificamos que pasaremos un parametro
+                // si necesitamos más los separamos con slashes
+                path: '/buscar/:buscar',
+                element: <ResultsPage></ResultsPage>
             }
         ]
     }

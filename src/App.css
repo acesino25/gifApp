@@ -4,7 +4,8 @@
   text-align: center;
   background-color: rgb(0, 3, 13) !important;
   width: 100vw;
-  height: 100vh;
+  height: auto;
+  padding-bottom: '2em';
   color: white;
 }
 

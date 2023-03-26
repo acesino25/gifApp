@@ -1,11 +1,10 @@
 import { Outlet } from "react-router-dom"
+import SearchBar from "../../components/SearchBar/SearchBar"
 
 const Layout = () => {
   return (
     <div>
-        <form>
-            <input type="text"></input>
-        </form>
+        <SearchBar></SearchBar>
         <Outlet></Outlet>
     </div>
   )
